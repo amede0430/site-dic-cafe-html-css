@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(90deg, #fff 20%, rgba(0, 0, 0, 0.6));
+    position: fixed;
+}
+
+.logo {
+    width: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.menus {
+    display: flex;
+    margin: 0;
+}
+
+.menus li {
+    list-style: none;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.menus li:hover {
+    background: #fff;
+    color: black;
+}
+
+.menus li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menus li a:hover {
+    color: black;
+}
+
+.couverture {
+    background: url(../img/sample_key.jpg) no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 600px;
+    line-height: 40px;
+}
+
+.couverture h1,
+.couverture p {
+    position: relative;
+    top: 50%;
+    left: 15%;
+}
+
+.couverture h1 {
+    font-size: 50px;
+}
+
+.couverture p {
+    font-size: smaller;
+}
+
+.concept {
+    text-align: center;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.concept .titre {
+    font-size: 40px;
+}
+
+.concept .concept-contenu {
+    display: flex;
+    gap: 80px;
+    margin-top: 60px;
+}
+
+.concept .concept-contenu .texte {
+    width: 62%;
+    text-align: start;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.concept .concept-contenu .texte .important {
+    font-weight: bold;
+}
+
+.concept .concept-contenu .texte .details {
+    font-size: x-small;
+}
+
+.concept .concept-contenu img {
+    width: 38%;
+}
+
+.menu {
+    text-align: center;
+    margin: 50px auto;
+    background: url(../img/sample_menu_bg.jpg) no-repeat bottom fixed;
+    background-size: cover;
+    padding: 40px;
+}
+
+.menu .titre {
+    font-size: 40px;
+    padding: 20px 0 60px 0;
+}
+
+.recommande .sous-titre {
+    font-size: 25px;
+    text-decoration: underline;
+    word-spacing: 2px;
+    color: #42210b;
+}
+
+.recommande .les-menus {
+    margin: 20px auto;
+    width: 83%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommande .les-menus .le-menu {
+    width: 49%;
+    display: flex;
+    height: 300px;
+}
+
+.recommande .les-menus .le-menu img {
+    width: 60%;
+}
+
+.recommande .les-menus .le-menu .details {
+    width: 40%;
+    text-align: start;
+    background-color: #fff;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center; */
+    padding: 5px;
+}
+
+.recommande .les-menus .le-menu .details .details-titre {
+    font-size: 18px;
+    position: relative;
+    top: 2%;
+}
+
+.recommande .les-menus .le-menu .details .details-description {
+    font-size: 15px;
+    position: relative;
+    top: 35%;
+}
+
+.recommande .les-menus .le-menu .details .details-prix {
+    position: relative;
+    left: 72%;
+    top: 72%;
+}
+
+.carte .sous-titre {
+    font-size: 25px;
+    text-decoration: underline;
+    word-spacing: 2px;
+    color: #42210b;
+}
+
+.carte .les-cafes {
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.carte .les-cafes .le-cafe {
+    width: 50%;
+    display: flex;
+    gap: 15px;
+    margin: 25px auto 0 auto;
+}
+
+.carte .les-cafes .le-cafe .img-cafe {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.carte .les-cafes .le-cafe .img-cafe img {
+    width: 100%;
+    /* height: auto;
+    display: block; */
+}
+
+.carte .les-cafes .le-cafe .details {
+    text-align: start;
+}
+
+.carte .les-cafes .le-cafe .details .details-titre {
+    font-size: 18px;
+    position: relative;
+    top: 20%;
+}
+
+.carte .les-cafes .le-cafe .details .details-prix {
+    position: relative;
+    top: 40%;
+}
+
+.contact {
+    width: 100%;
+    text-align: center;
+}
+
+.contact .titre {
+    font-size: 30px;
+}
+
+.contact .sous-titre {
+    font-size: small;
+    margin-bottom: 50px;
+}
+
+.contact .info {
+    display: flex;
+    gap: 50px;
+    text-align: start;
+    width: 80%;
+    margin: auto;
+}
+
+.contact .info .label {
+    width: 150px;
+}
+
+.contact .info .label,
+.contact .info .valeur {
+    line-height: 30px;
+}
+
+.contact .iframe-contact iframe {
+    width: 80%;
+    height: 500px;
+    margin: 50px auto;
+}
+
+footer {
+    width: 100%;
+    background: #251e19;
+    padding: 5px 0 20px 0;
+    text-align: center;
+}
+
+footer .liens-utiles {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    gap: 15px;
+    justify-content: center;
+}
+
+footer .liens-utiles li {
+    list-style: none;
+}
+
+footer .liens-utiles li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .liens-utiles li a img {
+    width: 100%;
+    height: 30px;
+}
+
+footer p {
+    font-size: xx-small;
+    color: #fff;
+    line-height: 25px;
+    padding: 10px 0 0 35px;
+}
+
+.menu-contact form {
+    width: 80%;
+}
+
+.menu-contact form .champ input,
+.menu-contact form .champ select {
+    height: 40px;
+    width: 70%;
+}
+
+.menu-contact form .champ label {
+    height: 40px;
+    width: 30%;
+    line-height: 40px;
+    text-align: start;
+    background: #beb9b7;
+    border: solid 1px #beb9b7;
+}
