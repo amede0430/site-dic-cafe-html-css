@@ -301,11 +301,16 @@ footer p {
     padding: 10px 0 0 35px;
 }
 
+.menu-contact {
+    padding-top: 8%;
+}
+
 .menu-contact form {
     width: 80%;
 }
 
-.menu-contact form .champ input,
+
+/* .menu-contact form .champ input,
 .menu-contact form .champ select {
     height: 40px;
     width: 70%;
@@ -318,4 +323,4 @@ footer p {
     text-align: start;
     background: #beb9b7;
     border: solid 1px #beb9b7;
-}
+} */
